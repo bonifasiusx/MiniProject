@@ -8,7 +8,7 @@ def kalkulator():
     while True:
         title = '== KALKULATOR RUNGKAD =='
         symbol = '=' * (len(title))
-        print(f'{symbol}\n{title}\n{symbol}\n')
+        print(f'\n{symbol}\n{title}\n{symbol}\n')
 
         for i in range(len(menu_utama)):
             print(str(i+1) + '. ' + menu_utama[i])
@@ -56,14 +56,19 @@ def kalkulator():
 
         elif user_input == 3:
             if angka2 == 0:
-                print('\nSama aja dong kalo dibagi 0 mah...')
-                print('Coba lagi yak!\n')
+                print('\nWah ini pelanggaran ini...')
+                print('Coba lagi yak!')
             else:
                 print('\nHasil: ' + str(angka1 / angka2))
 
         elif user_input == 4:
-            print('\nHasil: ' + str(angka1 * angka2))
+            if angka1 == 0 or angka2 == 0:
+                print('\nBerapa yak kira-kira🤡')
+            else:
+                print('\nHasil: ' + str(angka1 * angka2))
 
         else:
             print('\nInvalid Input Brader')
             print('Pilih menu yang bener lah kocak\n')
+            
+kalkulator()

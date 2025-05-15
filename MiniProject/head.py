@@ -10,4 +10,4 @@ def welcome():
     print(f'\n{symbol}')
     print(title)
     print(f'{symbol}\n')
-
+    
