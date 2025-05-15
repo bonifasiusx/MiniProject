@@ -70,5 +70,3 @@ def kalkulator():
         else:
             print('\nInvalid Input Brader')
             print('Pilih menu yang bener lah kocak\n')
-            
-kalkulator()
